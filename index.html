@@ -7,11 +7,15 @@
 </head>
 <body>
 
-    <div id="root">
+    <div id="root"></div>
 
-        <h1>Hello World!</h1>
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World from JavaScript";
 
-    </div>
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script>
     
 </body>
 </html>
